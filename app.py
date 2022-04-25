@@ -7,7 +7,7 @@ app = Flask(__name__)
 # if for some reason your conversation with Jabe gets weird, change the secret key
 
 app.config['SECRET_KEY'] = '8duas98d82j8aj'
-@app.route('/felibot', methods=['POST'])
+@app.route('/jabebot', methods=['POST'])
 def jabe():
  incoming_msg = request.values['Body']
  chat_log = session.get('chat_log')
